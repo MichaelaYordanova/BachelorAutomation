@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/mishe/Projects/CredoWeb">
+        <classes>
+            <class name="testFuctionalities.positive.CredoHeaderTests">
+                <methods>
+                    <include name="checkForCredoHeaderButton"/>
+                </methods>
+            </class>
+            <class name="testFuctionalities.positive.LoginWithExistingExpertAccountTests">
+                <methods>
+                    <include name="successfulLogin"/>
+                </methods>
+            </class>
+            <class name="testFuctionalities.positive.SuccessfulLogoutTests">
+                <methods>
+                    <include name="successfulLogout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
