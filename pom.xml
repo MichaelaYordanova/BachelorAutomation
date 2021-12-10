@@ -20,14 +20,7 @@
             <artifactId>testng</artifactId>
             <version>7.4.0</version>
         </dependency>
-             <dependency>
-  <groupId>com.user.deploy</groupId>
-  <artifactId>deploy-jar</artifactId>
-  <version>1.0</version>
-  <scope>system</scope>
-  <systemPath>C:\Program Files\Java\deploy.jar</systemPath>
-</dependency>
-             
+              
 
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
