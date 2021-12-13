@@ -1,4 +1,4 @@
-package testFuctionalities.UiComponents;
+package testFuctionalities;
 
 import core.CommonBaseActions;
 import org.openqa.selenium.By;
@@ -13,6 +13,7 @@ public class SuccessfulLogout extends CommonBaseActions {
     private static final By HEADER_IMAGE_ARROW_BUTTON = By.xpath("//span[contains(@class,'header-image arrow-icon')]");
     private static final By LOGOUT_BUTTON = By.cssSelector("div[class='controls'] span[class='description']");
     private final static By LOGIN_BUTTON_HEADER = By.xpath("//a[@href='/login']");
+
 
     public static void successfulLogout() {
         openCredoLive();
