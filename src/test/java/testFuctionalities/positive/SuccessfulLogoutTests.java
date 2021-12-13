@@ -2,7 +2,7 @@ package testFuctionalities.positive;
 
 import core.BaseTest;
 import org.testng.annotations.Test;
-import testFuctionalities.UiComponents.SuccessfulLogout;
+import testFuctionalities.SuccessfulLogout;
 
 
 public class SuccessfulLogoutTests extends BaseTest {
