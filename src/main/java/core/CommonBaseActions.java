@@ -1,21 +1,27 @@
 package core;
 
 import org.openqa.selenium.By;
-import utils.Browser;
 
-import static utils.Browser.*;
+import static utils.Browser.driver;
 
 public class CommonBaseActions {
+    private final static By LOGIN_BUTTON_HEADER = By.xpath("//a[@href='/login']");
+    private final static By USERNAME_INPUT_FIELD = By.xpath("//input[@formcontrolname='email']");
+    private final static By PASSWORD_INPUT_FIELD = By.xpath("//input[@type='password']");
+    private final static By EXACT_LOGIN_BUTTON = By.cssSelector("button[type='submit']");
+    private static final By CREATE_TITLE_NAME_FIELD = By.xpath("//textarea[@class='form-area bordered title-field cw-modifier-title-field ng-pristine ng-invalid ng-touched']");
+
     protected static void type(By elementLocator, String whatToType) {
         driver.findElement(elementLocator).sendKeys(whatToType);
     }
 
-    protected static void typeIntoSearchBar(By elementLocator, String whatToType) {
-        driver.findElement(elementLocator).sendKeys(whatToType);
-    }
+//    protected static void typeIntoSearchBar(By elementLocator, String whatToType) {
+//        driver.findElement(elementLocator).sendKeys(whatToType);
+//    }
 
     /**
      * Gets current URL address
+     *
      * @return the current URL address
      */
     protected static String getURL() {
@@ -40,6 +46,7 @@ public class CommonBaseActions {
 
     /**
      * Clicks on element based on provided locator
+     *
      * @param elementLocator provided locator
      */
     public static void click(By elementLocator) {
@@ -48,6 +55,7 @@ public class CommonBaseActions {
 
     /**
      * Gets text from element based on provided locator
+     *
      * @param elementLocator provided locator
      * @return
      */
@@ -56,6 +64,12 @@ public class CommonBaseActions {
     }
 
 
+    public static void login(String username, String password) {
+        click(LOGIN_BUTTON_HEADER);
+        type(USERNAME_INPUT_FIELD, username);
+        type(PASSWORD_INPUT_FIELD, password);
+        click(EXACT_LOGIN_BUTTON);
+    }
 
 
 }
