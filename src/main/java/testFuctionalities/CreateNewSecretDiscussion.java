@@ -1,4 +1,4 @@
-package testFuctionalities;
+/*package testFuctionalities;
 import org.openqa.selenium.By;
 import core.CommonBaseActions;
 import org.openqa.selenium.JavascriptExecutor;
@@ -40,3 +40,4 @@ public class CreateNewSecretDiscussion extends CommonBaseActions{
 
 
 }
+*/
