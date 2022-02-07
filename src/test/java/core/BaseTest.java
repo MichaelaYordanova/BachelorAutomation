@@ -11,9 +11,9 @@ public class BaseTest {
         Browser.setup();
     }
 
-    @AfterMethod
-    public void tearDown() {
-        Browser.quit();
-    }
+//    @AfterMethod
+//    public void tearDown() {
+//        Browser.quit();
+//    }
 
 }
