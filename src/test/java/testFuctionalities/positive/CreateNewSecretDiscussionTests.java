@@ -1,4 +1,4 @@
-package testFuctionalities.positive;
+/*package testFuctionalities.positive;
 
 import core.BaseTest;
 import org.testng.annotations.Test;
@@ -15,3 +15,4 @@ public class CreateNewSecretDiscussionTests extends BaseTest {
         CreateNewSecretDiscussion.creationOfASecretDiscussion();
     }
 }
+*/
