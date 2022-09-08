@@ -1,5 +1,5 @@
 
-/*package testFuctionalities;
+package testFuctionalities;
 
 import core.CommonBaseActions;
 import org.openqa.selenium.By;
@@ -62,4 +62,4 @@ public class CreateNewSecretDiscussion extends CommonBaseActions {
 
 }
 
-*/
+
